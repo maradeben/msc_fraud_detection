@@ -4,6 +4,7 @@ imbalanced-learn==0.12.4
 ipywidgets==7.8.1
 jaraco.collections==5.1.0
 numexpr==2.8.4
+numpy==1.26.4
 pip-chill==1.0.3
 pooch==1.7.0
 pyqt5==5.15.10
