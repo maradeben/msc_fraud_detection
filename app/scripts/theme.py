@@ -11,11 +11,9 @@ def set_green_theme():
             color: white;
             border-radius: 8px;
         }
-        .stRadio>div>label, .stSelectbox>div>label {
-            color: #006400;
-        }
-        .stTextInput>div>label, .stNumberInput>div>label {
-            color: #006400;
+        label, .stRadio label, .stRadio>div>label, .stRadio div[role="radio"], .stSelectbox>div>label, .stNumberInput>div>label, .stSlider>div>label {
+            color: #006400 !important;
+            font-weight: 600;
         }
         h1, h2, h3, h4, h5, h6 {
             color: #228B22;
