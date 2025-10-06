@@ -3,7 +3,7 @@ st.set_page_config(page_title="Fraud Detection App", page_icon="🟢", layout="c
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from scripts.model_utils import load_model, predict_with_explainer, get_feature_names
+from scripts.model_utils import load_model, predict_with_explainer, get_feature_names, scale_data
 from scripts.theme import set_green_theme
 
 def main():
@@ -91,6 +91,11 @@ def main():
 			ax.set_title('Feature Impact on Prediction')
 			st.pyplot(fig)
 			st.markdown("<small>Positive values push towards fraud, negative towards non-fraud. Each feature above contributed to the prediction shown.</small>", unsafe_allow_html=True)
+	st.markdown("""
+        <div style='text-align:center;'>
+            <p style='color:#228B22;'>Samuel Maradesa, MSc Project</p>
+        </div>
+    """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
 	main()
